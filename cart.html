@@ -13,14 +13,15 @@
    <section id="header">
     <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
+
     <div>
         <ul id="navbar">
-
+            
             <li><a  href="shop.html">Shop</a></li>
             <li><a  href="blog.html">Blog</a></li>
-            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            <li><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
             <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
     </div>
@@ -32,74 +33,88 @@
 
    <section id="page_header" class="about-header">
     
-    <h2>About</h2>
+    <h2>Cart</h2>
     
-    <p>Lorem ipsum dolor sit amet, consectetur</p>
+    <p>LEAVE A MESSAGE, We love to hear from you!</p>
     
    </section>
 
-   <section id="about-head" class="section-p1">
-    <img src="img/about/a6.jpg" alt="">
-    <div >
-        <h2>Who We Are</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do siusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis auteirure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="img/products/f1.jpg" alt=""></td>
+          <td>Cartoon Astronaut T-Shirts</td>
+          <td>$118.19</td>
+          <td><input type="number" value="1"></td>
+          <td>$118.19</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="img/products/f2.jpg" alt=""></td>
+          <td>Cartoon Astronaut T-Shirts</td>
+          <td>$118.19</td>
+          <td><input type="number" value="1"></td>
+          <td>$118.19</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="img/products/f3.jpg" alt=""></td>
+          <td>Cartoon Astronaut T-Shirts</td>
+          <td>$118.19</td>
+          <td><input type="number" value="1"></td>
+          <td>$118.19</td>
+        </tr>
+      </tbody>
 
-            <abbr title="">Create stunning images with as much or as little control as you like thank to a choice of Basic and Creative modes.</abbr>
-        
-            <br><br>
+    </table>
 
-            <marquee bgcolour="#ccc" loop="-1" scrollamount="5" width="100%">Create stunning images with as much or as little control as you like thank to a choice of Basic and Creative modes.
-
-            </marquee>
-    </div>
    </section>
 
-   <section id="about-app" class="section-p1">
-    <h1>Download Our <a href="#">App</a></h1>
-    <div class="video">
-        <video autoplay muted loop src="img/about/1.mp4"></video>
+   <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Apply Coupon</h3>
+      <div>
+        <input type="text" placeholder="Enter Your Coupon">
+        <button class="normal">Apply</button>
+      </div>
     </div>
-   </section>
 
-   <section id="feature" class="section-p1">
-    <div class="fe-box">
-        <img src="img/features/f1.png" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f2.png" alt="">
-        <h6>Online Order</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f3.png" alt="">
-        <h6>Save Money</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f4.png" alt="">
-        <h6>Promotions</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f5.png" alt="">
-        <h6>Happy Sell</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f6.png" alt="">
-        <h6>Support</h6>
-    </div>
-   </section>
+    <div id="subtotal">
+      <h3>Cart Totals</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td>$ 335</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>$ 335</strong></td>
+        </tr>
+      </table>
+      <button id="navigateButton" class="normal">Add to Card Details</button>
 
-   <section id="newsletter" class="section-p1 section-m1">
-    <div class="newstest">
-        <h4>Sign Up For newsletter</h4>
-        <p>Get E-mail updates about our latest shop and <span>special offers</span>
-        </p>
+      <script>
+          document.getElementById("navigateButton").addEventListener("click", function() {
+              window.location.href = "card details.html";
+          });
+      </script>
     </div>
-     <div class="form">
-        <input type="text" placeholder="Your email address">
-        <button class="normal">Sign Up</button>
-     </div>
    </section>
 
    
